@@ -43,7 +43,47 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p> No content added. </p>
+<p>Screenshots</p>
+<table border="0" cellpadding="2" cellspacing="2">
+<tr>
+<td><a href="NO3.png"><img src="NO3_small.png" width="188" height="188"></td>
+<td><a href="Kh.png"><img src="Kh_small.png" width="188" height="188"></td>
+<td><a href="all.png"><img src="all_small.png" width="250" height="188"></td>
+</tr>
+</table>
+
+<h3>Installation</h3>
+<ol>
+<li>Install R
+<li>Execute reefree.R
+</ol>
+
+<p>Your data</p>
+<ul>
+<li>Mantain an Openoffice (or other spreadsheet file like this): <a href="reef.ods">reef.ods</a>
+<li>Convert to CSV in order to be used byb reefree.R: <a href="reef.ods">reef.csv</a>
+</ul>
+
+<p>Using reefree</p>
+<tt>
+<br>Rscript reefree.R param [days]
+<br>REEFREE help:
+<br>all: plot all params
+<br>Ca,Kh,Mg: plot Ca, Kh, Mg
+<br>Ca: plot Ca
+<br>Kh | Mg | NO3 | PO4: plot Kh or Mg or NO3 or PO4
+<br>chemist: show recommended chemist ranges
+<br>water: display water changes
+<br>NO3-PO4: dispersion graph of this params
+<br>
+<br>Examples:
+<br>'Rscript reefree.R Ca': plot Ca for all days
+<br>'Rscript reefree.R all 30': plot all params for last 30 days
+<br>'Rscript reefree.R all2 90': plot all params (different display) for last 90 days
+<br>'Rscript reefree.R water 60': display water changes for last 60 days
+<tt>
+
+
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
