@@ -33,9 +33,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <!-- get project title  -->
 <!-- own website starts here, the following may be changed as you like -->
 
-<img src="reefree_logo_white_balance_small.jpg" width="250" height="167">
-<br>
-
+<table border="0" align="left" width="630" cellpadding="2" cellspacing="2">
+<tr>
+<td align="left">
 <?php if ($handle=fopen('http://'.$domain.'/export/projtitl.php?group_name='.$group_name,'r')){
 $contents = '';
 while (!feof($handle)) {
@@ -43,11 +43,15 @@ while (!feof($handle)) {
 }
 fclose($handle);
 echo $contents; } ?>
+</td>
+<td align="right"><img src="reefree_logo_white_balance_small.jpg" width="250" height="167"></td>
+<br>
+
 
 <!-- end of project description -->
 
 <h3>Screenshots</h3>
-<table border="0" cellpadding="2" cellspacing="2">
+<table border="0" width="630" cellpadding="2" cellspacing="2">
 <tr>
 <td><a href="NO3.png"><img src="NO3_small.png" width="188" height="188"></td>
 <td><a href="Kh.png"><img src="Kh_small.png" width="188" height="188"></td>
