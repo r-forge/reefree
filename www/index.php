@@ -45,7 +45,8 @@ fclose($handle);
 echo $contents; } ?>
 </td>
 <td align="right"><img src="reefree_logo_white_balance_small.jpg" width="250" height="167"></td>
-<br>
+</tr>
+</table><br>
 
 
 <!-- end of project description -->
