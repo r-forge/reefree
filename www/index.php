@@ -33,6 +33,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <!-- get project title  -->
 <!-- own website starts here, the following may be changed as you like -->
 
+<img src="reefree_logo_white_balance_small.jpg" width="250" height="167">
+<br>
+
 <?php if ($handle=fopen('http://'.$domain.'/export/projtitl.php?group_name='.$group_name,'r')){
 $contents = '';
 while (!feof($handle)) {
@@ -43,7 +46,7 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p>Screenshots</p>
+<h3>Screenshots</h3>
 <table border="0" cellpadding="2" cellspacing="2">
 <tr>
 <td><a href="NO3.png"><img src="NO3_small.png" width="188" height="188"></td>
@@ -58,16 +61,16 @@ echo $contents; } ?>
 <li>Execute reefree.R
 </ol>
 
-<p>Your data</p>
-<ul>
+<h3>Your data</h3>
+<ol>
 <li>Mantain an Openoffice (or other spreadsheet file like this): <a href="reef.ods">reef.ods</a>
-<li>Convert to CSV in order to be used byb reefree.R: <a href="reef.ods">reef.csv</a>
-</ul>
+<li>Convert to CSV in order to be used byb reefree.R: <a href="reef.csv">reef.csv</a>
+</ol>
 
-<p>Using reefree</p>
+<h3>Using reefree</h3>
 <tt>
 <br>Rscript reefree.R param [days]
-<br>REEFREE help:
+<br>Params help:
 <br>all: plot all params
 <br>Ca,Kh,Mg: plot Ca, Kh, Mg
 <br>Ca: plot Ca
