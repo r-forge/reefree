@@ -33,8 +33,8 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <!-- get project title  -->
 <!-- own website starts here, the following may be changed as you like -->
 
-<table border="0" align="left" width="630" cellpadding="2" cellspacing="2">
-<tr>
+<table border="0" align="left" width="100%" cellpadding="2" cellspacing="2">
+<tr valign="top">
 <td align="left">
 <?php if ($handle=fopen('http://'.$domain.'/export/projtitl.php?group_name='.$group_name,'r')){
 $contents = '';
@@ -43,27 +43,27 @@ while (!feof($handle)) {
 }
 fclose($handle);
 echo $contents; } ?>
+<!-- end of project description -->
 </td>
 <td align="right"><img src="reefree_logo_white_balance_small.jpg" width="250" height="167"></td>
+<td width="100%">&nbsp;</td>
 </tr>
-</table><br>
-
-
-<!-- end of project description -->
-
-<h3>Screenshots</h3>
-<table border="0" width="630" cellpadding="2" cellspacing="2">
 <tr>
+  <td><table cellpadding="2" cellspacing="2" align="left" border="0">
 <td><a href="NO3.png"><img src="NO3_small.png" width="188" height="188"></td>
 <td><a href="Kh.png"><img src="Kh_small.png" width="188" height="188"></td>
+</tr></table>
+</td>
 <td><a href="all.png"><img src="all_small.png" width="250" height="188"></td>
+<td width="100%">&nbsp;</td>
 </tr>
 </table>
 
 <h3>Installation</h3>
 <ol>
-<li>Install R
-<li>Execute reefree.R
+<li>Install R</li>
+<li><a href="http://r-forge.r-project.org/plugins/scmsvn/viewcvs.php/pkg/?root=reefree">Download reefree.R</a></li>
+<li>Execute reefree.R</li>
 </ol>
 
 <h3>Your data</h3>
@@ -74,7 +74,7 @@ echo $contents; } ?>
 
 <h3>Using reefree</h3>
 <tt>
-<br>Rscript reefree.R param [days]
+Rscript reefree.R param [days]
 <br>Params help:
 <br>all: plot all params
 <br>Ca,Kh,Mg: plot Ca, Kh, Mg
@@ -89,8 +89,9 @@ echo $contents; } ?>
 <br>'Rscript reefree.R all 30': plot all params for last 30 days
 <br>'Rscript reefree.R all2 90': plot all params (different display) for last 90 days
 <br>'Rscript reefree.R water 60': display water changes for last 60 days
-<tt>
+</tt>
 
+<strong>For any suggestions or collaborations, write to xaviblas@gmail.com</strong>
 
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
