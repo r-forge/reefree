@@ -69,7 +69,7 @@ echo $contents; } ?>
 <h3>Your data</h3>
 <ol>
 <li>Mantain an Openoffice (or other spreadsheet file like this): <a href="reef.ods">reef.ods</a>
-<li>Convert to CSV in order to be used byb reefree.R: <a href="reef.csv">reef.csv</a>
+<li>Convert to CSV in order to be used by reefree.R: <a href="reef.csv">reef.csv</a>
 </ol>
 
 <h3>Using reefree</h3>
@@ -91,10 +91,9 @@ Rscript reefree.R param [days]
 <br>'Rscript reefree.R water 60': display water changes for last 60 days
 </tt>
 
-<strong>For any suggestions or collaborations, write to xaviblas@gmail.com</strong>
+<p><br><strong>Any suggestions or collaborations will be welcome. Write to: xaviblas@gmail.com</strong>
 
-
-<p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
+<p><br> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
 </body>
 </html>
