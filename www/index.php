@@ -68,8 +68,13 @@ echo $contents; } ?>
 
 <h3>Your data</h3>
 <ol>
-<li>Mantain an Openoffice (or other spreadsheet file like this): <a href="reef.ods">reef.ods</a>
-<li>Convert to CSV in order to be used by reefree.R: <a href="reef.csv">reef.csv</a>
+<li>Mantain an spreadsheet file like where you record data.
+  <ul>
+  <li>OpenOffice sample: <a href="reef.ods">reef.ods</a>
+  <li>MS Excel sample: <a href="reef.xls">reef.xls</a>
+  </ul>
+<li>Convert to CSV in order to be used by reefree.R: <a href="reef.csv">reef.csv</a><br>
+Note in the conversion the separator character is the semicolon <b>;</b>
 </ol>
 
 <h3>Using reefree</h3>
