@@ -193,7 +193,7 @@ aq.help <- function() {
 	returnMessage <<- c(
 	"REEFREE help:",
 	"all: plot all params",
-	"Ca,Kh,Mg: plot Ca, Kh, Mg",
+	"Ca.Kh.Mg: plot Ca, Kh and Mg",
 	"Ca: plot Ca",
 	"Kh | Mg | NO3 | PO4: plot Kh or Mg or NO3 or PO4", 
 	"chemist: show recommended chemist ranges",
@@ -202,6 +202,7 @@ aq.help <- function() {
 	"",
 	"examples:",
 	"'Rscript reefree.R Ca': plot Ca for all days",
+	"'Rscript reefree.R Ca.Kh.Mg': plot Ca, Kh and Mg in a graph for all days",
 	"'Rscript reefree.R all 30': plot all params for last 30 days",
 	"'Rscript reefree.R all2 90': plot all params (different display) for last 90 days",
 	"'Rscript reefree.R water 60': display water changes for last 60 days",
@@ -226,6 +227,10 @@ if(length(args) == 1 || length(args) == 2) {
 	}
 	if(args == "all2" || args == "ALL2") {
 		aq.all(2) 
+		paramsOK = TRUE
+	}
+	if(args == "ca.kh.mg" || args == "Ca.Kh.Mg") {
+		aq.ca.kh.mg()
 		paramsOK = TRUE
 	}
 	if(args == "Ca" || args == "ca" || args == "Kh" || args == "kh" || args == "Mg" || args == "mg" ||
